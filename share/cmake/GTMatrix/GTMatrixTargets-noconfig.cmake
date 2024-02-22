@@ -12,8 +12,8 @@ set_target_properties(GTMatrix PROPERTIES
   IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libGTMatrix.a"
   )
 
-list(APPEND _cmake_import_check_targets GTMatrix )
-list(APPEND _cmake_import_check_files_for_GTMatrix "${_IMPORT_PREFIX}/lib/libGTMatrix.a" )
+list(APPEND _IMPORT_CHECK_TARGETS GTMatrix )
+list(APPEND _IMPORT_CHECK_FILES_FOR_GTMatrix "${_IMPORT_PREFIX}/lib/libGTMatrix.a" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

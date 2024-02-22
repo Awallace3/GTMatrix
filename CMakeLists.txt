@@ -26,7 +26,7 @@ include_directories(${MPI_C_INCLUDE_PATH}
     )
 
 # Set the compiler options
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wunused-variable -g -O3")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wunused-variable -g -O3 -diag-disable=10441")
 
 add_library(GTMatrix STATIC ${GTMatrix_SRC})
 #target_compile_features(GTMatrix PRIVATE c_std_11)
