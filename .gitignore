@@ -54,3 +54,5 @@ dkms.conf
 build
 lib
 include
+share
+test
